@@ -1,7 +1,34 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
-    <h1>This is a booking page about the boat</h1>
-  </main>
+  <h2 class="text-h2">Bokning</h2>
+  <h3 class="text-subtitle-1">Pris och vilkor.</h3>
+  <v-expansion-panels>
+    <v-expansion-panel title="Pris">
+      <v-expansion-panel-text>
+        <v-list lines="one" density="compact">
+          <v-list-item>18000kr/vecka (tom v33)</v-list-item>
+          <v-list-item>14000kr/vecka (v34 framåt)</v-list-item>
+          <v-list-item>Deposition : 10500kr </v-list-item>
+        </v-list>
+      </v-expansion-panel-text>
+    </v-expansion-panel>
+  </v-expansion-panels>
+  <div class="text-body-1">
+    <p>Kräver nautisk kompetens.</p>
+    <p>Båten försäkrat hos Svenska Sjö.</p>
+    <p>Kontrakt enligt mall i länken.</p>
+    <p>Rabatt vid längre uthyrning</p>
+    <p>
+      Återbetalas i helhet om båten lämnas tillbaka i samma skick med Deposition : 10500kr (Samma
+      som självrisk - Återbetalas i helhet om båten lämnas tillbaka i samma skick med full tank).
+    </p>
+    <p>10% i handpenning för att reservera båten. Resten senast vid avhämtning.</p>
+    <p>Kan teckna hyreskontraktet i förväg digitalt eller vid utlämning.</p>
+    <p>
+      Uthyres lördag till lördag. Exakta tider enligt överenskommelse, men som tumregel avfärd på
+      eftermiddag och ankomst på förmiddag.
+    </p>
+    <p>Ring gärna vid funderingar.</p>
+  </div>
 </template>
