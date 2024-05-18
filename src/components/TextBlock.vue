@@ -1,13 +1,14 @@
 <script setup lang="ts"></script>
 <template>
   <v-container class="minimal-container">
+    <slot name="header" />
     <v-row no-gutters>
+      <!-- remember that an image still should be in v-col -->
+      <slot name="left" />
       <v-col>
-        <v-sheet class="minimal-sheet"><slot /> </v-sheet>
+        <v-sheet class="minimal-sheet"><slot /></v-sheet>
       </v-col>
-      <v-col>
-        <v-sheet class="minimal-sheet"> another pic of the boat </v-sheet>
-      </v-col>
+      <slot name="right" />
     </v-row>
   </v-container>
 </template>
