@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeroSection from '../components/HeroSection.vue'
 import TextBlock from '../components/TextBlock.vue'
+import Kartan from '../components/Kartan.vue'
 </script>
 
 <template>
@@ -13,4 +14,5 @@ import TextBlock from '../components/TextBlock.vue'
     och rofylldheten till havs. Vår segelbåt erbjuder en oförglömlig upplevelse för både nybörjare
     och erfarna seglare. Kom och upplev magin av segling!</TextBlock
   >
+  <Kartan />
 </template>
