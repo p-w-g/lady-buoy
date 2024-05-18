@@ -17,6 +17,7 @@ import { RouterView } from 'vue-router'
       <v-list-item link to="/" title="Home" />
       <v-list-item link to="/about" title="Om båten" />
       <v-list-item link to="/book" title="Att boka" />
+      <v-list-item link to="/contact" title="Kontakta oss" />
     </v-navigation-drawer>
     <v-main>
       <RouterView />
