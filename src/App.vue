@@ -5,7 +5,7 @@ import { RouterView } from 'vue-router'
   <v-app>
     <v-navigation-drawer>
       <v-list-item
-        title="Lady Buoy"
+        title="Lazy Buoy"
         prepend-icon="$vuetify"
         color="success"
         subtitle="Båtens hemsida"
