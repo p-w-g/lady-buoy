@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
 import Burger from './assets/Burger.vue'
 import { ref } from 'vue'
+import HomeView from './views/HomeView.vue'
+import AboutView from './views/AboutView.vue'
+import BookingView from './views/BookingView.vue'
 const show_mobile_drawer = ref(false)
 const toggleDrawer = () => (show_mobile_drawer.value = !show_mobile_drawer.value)
 </script>
@@ -25,11 +27,12 @@ const toggleDrawer = () => (show_mobile_drawer.value = !show_mobile_drawer.value
       <v-list-item link to="/" title="Home" />
       <v-list-item link to="/about" title="Om båten" />
       <v-list-item link to="/book" title="Att boka" />
-      <v-list-item link to="/contact" title="Kontakta oss" />
     </v-navigation-drawer>
 
     <v-main>
-      <RouterView />
+      <HomeView />
+      <AboutView />
+      <BookingView />
     </v-main>
   </v-app>
 </template>
