@@ -5,7 +5,7 @@
         <v-sheet class="minimal-sheet">
           <!-- Google Maps Embed -->
           <iframe
-            src="https://www.google.com/maps/embed?pb=!4v1681747263454!6m8!1m7!1s0x465f85870ec81e6b:0x5508fd51ea5c6bff!5m2!1s2021-07-29!2e2!3m4!1s0x465f85870ec81e6b:0x5508fd51ea5c6bff!8m2!3d59.4572983!4d18.2776362"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Svinninge%20Marina%20AB&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             width="100%"
             height="450"
             style="border: 0"
