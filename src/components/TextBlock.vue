@@ -1,7 +1,11 @@
 <script setup lang="ts"></script>
 <template>
   <v-container class="minimal-container">
-    <slot name="header" />
+    <v-row no-gutters>
+      <v-col cols="12" sm="6">
+        <slot name="header" />
+      </v-col>
+    </v-row>
     <v-row no-gutters>
       <!-- remember that an image still should be in v-col -->
       <slot name="left" />
