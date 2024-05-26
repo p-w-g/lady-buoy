@@ -1,85 +1,35 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
+import Burger from './assets/Burger.vue'
+import { ref } from 'vue'
+const show_mobile_drawer = ref(false)
+const toggleDrawer = () => (show_mobile_drawer.value = !show_mobile_drawer.value)
 </script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <v-app>
+    <v-app-bar app dark>
+      <v-toolbar-title class="ml-3">Lazy Buoy</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn v-show="$vuetify.display.xs" @click="toggleDrawer">
+        <Burger />
+      </v-btn>
+      <div v-if="!$vuetify.display.xs">
+        <v-btn link to="/">Home</v-btn>
+        <v-btn link to="/about">Om båten</v-btn>
+        <v-btn link to="/book">Att boka</v-btn>
+        <v-btn link to="/contact">Kontakta oss</v-btn>
+      </div>
+    </v-app-bar>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <v-navigation-drawer v-model="show_mobile_drawer" app temporary>
+      <v-list-item link to="/" title="Home" />
+      <v-list-item link to="/about" title="Om båten" />
+      <v-list-item link to="/book" title="Att boka" />
+      <v-list-item link to="/contact" title="Kontakta oss" />
+    </v-navigation-drawer>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+    <v-main>
+      <RouterView />
+    </v-main>
+  </v-app>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>

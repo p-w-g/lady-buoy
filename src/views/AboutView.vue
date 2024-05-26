@@ -1,15 +1,9 @@
+<script setup lang="ts">
+import Tekniskt from '../components/About/Tekniskt.vue'
+import Utrustning from '../components/About/Utrustning.vue'
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <h2 class="text-h2">Om båten</h2>
+  <Tekniskt />
+  <Utrustning />
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
