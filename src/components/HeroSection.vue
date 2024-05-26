@@ -6,7 +6,6 @@
           <h1 class="display-2">Bavaria 36 Holiday</h1>
           <p class="subtitle-1">Tre hytt ger mycket utrymme för sällskåpet</p>
           <p class="subtitle-1">Tillgänglig från Svinninge Marina.</p>
-          Bavaria image here
         </div>
       </v-col>
     </v-row>
@@ -15,9 +14,15 @@
 
 <style scoped>
 .hero-container {
-  background-size: cover;
-  background-position: center;
+  @media (min-width: 700px) {
+    background-size: 50% 100%;
+  }
+
+  width: 100%;
+  height: auto;
   padding: 50px;
+  background-image: url('../assets/boat2.jpg');
+  object-fit: contain;
 }
 
 .hero-btn {
