@@ -3,7 +3,13 @@ import TextBlock from '../components/TextBlock.vue'
 </script>
 
 <template>
-  <h2 class="text-h2">Bokning</h2>
+  <v-container class="minimal-container">
+    <v-row no-gutters>
+      <v-col cols="12" sm="6">
+        <h2 class="text-h2">Bokning</h2>
+      </v-col>
+    </v-row>
+  </v-container>
   <TextBlock>
     <template #header>
       <p class="subtitle-1">Pris</p>
@@ -43,3 +49,11 @@ import TextBlock from '../components/TextBlock.vue'
     </template>
   </TextBlock>
 </template>
+
+<style scoped>
+.minimal-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #f5f5f5; /* Light grey background for contrast */
+}
+</style>
