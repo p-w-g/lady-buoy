@@ -1,12 +1,17 @@
 <script setup lang="ts">
-import HomeView from './views/HomeView.vue'
+import SubHero from './components/SubHero.vue'
+import Hero from './components/Hero.vue'
+import GMap from './components/GMap.vue'
+
 import AboutView from './views/AboutView.vue'
 import BookingView from './views/BookingView.vue'
 </script>
 <template>
   <v-app>
     <v-main>
-      <HomeView />
+      <Hero />
+      <SubHero />
+      <GMap />
       <AboutView />
       <BookingView />
     </v-main>
