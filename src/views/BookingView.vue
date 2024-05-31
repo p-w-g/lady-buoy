@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import TextBlock from '../components/TextBlock.vue'
-</script>
-
 <template>
   <v-container class="minimal-container">
     <v-row no-gutters>
@@ -46,32 +42,6 @@ import TextBlock from '../components/TextBlock.vue'
       </v-col>
     </v-row>
   </v-container>
-
-  <!-- <TextBlock>
-    <template #header>
-      <p class="subtitle-1">Vilkor</p>
-    </template>
-    <template #default>
-      <div class="text-body-1">
-        <p>Kräver nautisk kompetens.</p>
-        <p>Båten försäkrat hos Svenska Sjö.</p>
-        <p>Kontrakt enligt mall i länken.</p>
-        <p>Rabatt vid längre uthyrning</p>
-        <p>
-          Återbetalas i helhet om båten lämnas tillbaka i samma skick med Deposition : 10500kr
-          (Samma som självrisk - Återbetalas i helhet om båten lämnas tillbaka i samma skick med
-          full tank).
-        </p>
-        <p>10% i handpenning för att reservera båten. Resten senast vid avhämtning.</p>
-        <p>Kan teckna hyreskontraktet i förväg digitalt eller vid utlämning.</p>
-        <p>
-          Uthyres lördag till lördag. Exakta tider enligt överenskommelse, men som tumregel avfärd
-          på eftermiddag och ankomst på förmiddag.
-        </p>
-        <p>Ring gärna vid funderingar.</p>
-      </div>
-    </template>
-  </TextBlock> -->
 </template>
 
 <style scoped>
