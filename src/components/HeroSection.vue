@@ -19,7 +19,7 @@
   }
 
   width: 100%;
-  height: auto;
+  height: 20rem;
   padding: 50px;
   background-image: url('../assets/boat2.jpg');
   object-fit: contain;
