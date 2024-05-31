@@ -30,9 +30,9 @@ import TextBlock from '../components/TextBlock.vue'
             <p>Kontrakt enligt mall i länken. Rabatt vid längre uthyrning</p>
             <br />
             <p>
-              Återbetalas i helhet om båten lämnas tillbaka i samma skick med Deposition: 10500kr
-              (Samma som självrisk - Återbetalas i helhet om båten lämnas tillbaka i samma skick med
-              full tank). 10% i handpenning för att reservera båten. Resten senast vid avhämtning.
+              Deposition: 10500kr (Samma som självrisk - Återbetalas i helhet om båten lämnas
+              tillbaka i samma skick med full tank). 10% i handpenning för att reservera båten.
+              Resten senast vid avhämtning.
             </p>
             <br />
             <p>
@@ -78,7 +78,7 @@ import TextBlock from '../components/TextBlock.vue'
 .minimal-container {
   padding-top: 24px;
   padding-bottom: 24px;
-  background-color: #f5f5f5; /* Light grey background for contrast */
+  background-color: #f5f5f5;
 }
 
 .minimal-sheet {

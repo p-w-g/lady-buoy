@@ -19,6 +19,6 @@ import Utrustning from '../components/About/Utrustning.vue'
 .minimal-container {
   padding-top: 24px;
   padding-bottom: 24px;
-  background-color: #f5f5f5; /* Light grey background for contrast */
+  background-color: #f5f5f5;
 }
 </style>
