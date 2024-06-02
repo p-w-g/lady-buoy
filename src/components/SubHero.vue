@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import HeroSection from '../components/HeroSection.vue'
 import TextBlock from '../components/TextBlock.vue'
-import Kartan from '../components/Kartan.vue'
 </script>
 
 <template>
-  <HeroSection />
   <TextBlock>
     <template #default>
       <p>
@@ -30,7 +27,6 @@ import Kartan from '../components/Kartan.vue'
       </v-col>
     </template>
   </TextBlock>
-  <Kartan />
 </template>
 <style scoped>
 .boat {
