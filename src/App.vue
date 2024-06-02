@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SubHero from './components/SubHero.vue'
 import Hero from './components/Hero.vue'
+import Footer from './components/Footer.vue'
 
 import AboutView from './views/AboutView.vue'
 import BookingView from './views/BookingView.vue'
@@ -13,5 +14,6 @@ import BookingView from './views/BookingView.vue'
       <AboutView />
       <BookingView />
     </v-main>
+    <Footer />
   </v-app>
 </template>
