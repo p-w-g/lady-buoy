@@ -9,8 +9,10 @@
               <span>Sailyachtsea@gmail.com</span>
             </p>
             <p class="subtitle-1">
-              <span>0768498391</span>
+              <span>076-849 83 91</span>
             </p>
+            <p class="subtitle-1">Information är inte en offert/anbud och är inte bindande.</p>
+            <p class="subtitle-1">En individuell offert skickas efter förfrågan.</p>
             <p class="subtitle-1">Godkänd för F-Skatt</p>
           </div>
         </v-col>
