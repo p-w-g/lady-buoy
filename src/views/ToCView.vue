@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-h2">VILLKOR</h2>
+  <h2>VILLKOR</h2>
   <br />
   <p>- 10% Handpenning för att boka.</p>
   <p>- Hyresperiod är lördag 14:00 till nästkommande lördag 12:00.</p>

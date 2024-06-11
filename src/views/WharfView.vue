@@ -1,6 +1,7 @@
 <template>
-  <h2 class="text-h2">HEMMAHAMN</h2>
+  <h2>HEMMAHAMN</h2>
   <br />
+
   <iframe
     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Svinninge%20Marina%20AB&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
     width="100%"

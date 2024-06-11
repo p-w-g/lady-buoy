@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-h2">TILLGÄNGLIGHET</h2>
+  <h2>TILLGÄNGLIGHET</h2>
   <v-row class="d-flex align-center justify-center" no-gutters>
     <v-col cols="12" sm="6" md="4">
       <v-list-item class="unavailable">Vecka 22</v-list-item>
